@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,87 +8,88 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="light">
-  <!-- Light/Dark toggle -->
-  <button id="theme-toggle" aria-label="Toggle theme">
-    <i class="fas fa-moon"></i>
-  </button>
+<body>
+  <!-- Top Navigation -->
+  <nav class="topbar">
+    <div class="topbar__logo">Portfolio</div>
+    <ul class="topbar__menu">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- HERO -->
   <header id="hero">
-    <img src="assets/abhinav-photo.jpg" alt="Abhinav Kashyap" class="avatar">
-    <h1>Abhinav Kashyap</h1>
-    <p class="subtitle">Pursuing B.Tech in CSE (2023–27) at IIIT Delhi</p>
-    <nav class="social-links">
-      <a href="https://github.com/Abhinav0821" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/abhinav-kashyap-ba918a2bb/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="mailto:abhinav23022@iiitd.ac.in"><i class="fas fa-envelope"></i> Email</a>
-    </nav>
+    <div class="hero__content">
+      <img src="assets/abhinav-photo.jpg" alt="Abhinav Kashyap" class="avatar">
+      <h1>Abhinav Kashyap</h1>
+      <p class="subtitle">Pursuing B.Tech in CSE (2023–27) at IIIT Delhi</p>
+      <nav class="social-links">
+        <a href="https://github.com/Abhinav0821" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abhinav-kashyap-ba918a2bb/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:abhinav23022@iiitd.ac.in"><i class="fas fa-envelope"></i></a>
+      </nav>
+    </div>
   </header>
 
   <!-- ABOUT -->
-  <section id="about" class="card">
-    <h2>About Me</h2>
-    <ul>
+  <section id="about" class="section card">
+    <h2 class="section__title">About Me</h2>
+    <ul class="about__list">
       <li><strong>Date of Birth:</strong> 21 Aug 2004</li>
-      <li><strong>Expertise:</strong> Full Stack Development, Database Design & Optimization, UX-Driven Interface Design</li>
-      <li><strong>Interests:</strong> Supervised & Unsupervised ML, Cybersecurity</li>
+      <li><strong>Expertise:</strong> Full Stack Development, Database Design &amp; Optimization, UX-Driven Interface Design</li>
+      <li><strong>Interests:</strong> Supervised &amp; Unsupervised ML, Cybersecurity</li>
     </ul>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <!-- HappenIn -->
-      <article class="card">
+  <section id="projects" class="section">
+    <h2 class="section__title">Projects</h2>
+    <div class="projects__row">
+      <article class="project-card">
         <h3>HappenIn</h3>
+        <p class="description">Scalable full-stack web app for event creation, booking, analytics &amp; e-ticketing.</p>
+        <p class="tech">Tech: HTML · CSS · JavaScript · Django · PostgreSQL</p>
         <div class="media">
           <iframe src="https://www.youtube.com/embed/XXX?rel=0" allowfullscreen></iframe>
         </div>
-        <p>Scalable full-stack web app for event creation, booking, analytics & e-ticketing.</p>
-        <p class="tech">Tech: HTML · CSS · JavaScript · Django · PostgreSQL</p>
         <a class="btn" href="https://github.com/Abhinav0821/Happenin-Event_management-" target="_blank">View on GitHub</a>
       </article>
-
-      <!-- Angry Birds -->
-      <article class="card">
+      <article class="project-card">
         <h3>Angry Birds Game</h3>
+        <p class="description">Angry Birds-inspired game with slingshot physics and collaborative layout.</p>
+        <p class="tech">Tech: LibGDX · Java</p>
         <div class="media">
           <iframe src="https://www.youtube.com/embed/YYY?rel=0" allowfullscreen></iframe>
         </div>
-        <p>Angry Birds-inspired game with slingshot physics and collaborative layout.</p>
-        <p class="tech">Tech: LibGDX · Java</p>
         <a class="btn" href="https://github.com/Abhinav0821/AngryBirds_Game" target="_blank">View on GitHub</a>
       </article>
-
-      <!-- Real Estate Analysis -->
-      <article class="card">
+    </div>
+    <div class="projects__row">
+      <article class="project-card">
         <h3>Real Estate Investment Analysis</h3>
-        <p>Stacked ML+DL ensemble combining numeric & image data to score properties.</p>
+        <p class="description">Stacked ML+DL ensemble combining numeric &amp; image data to score properties.</p>
         <p class="tech">Tech: Python · Pandas · TensorFlow · EfficientNet · Scikit-learn</p>
         <a class="btn" href="https://github.com/Abhinav0821/Real-Estate-Investment-Analysis" target="_blank">View on GitHub</a>
       </article>
-
-      <!-- RISC-V Assembler -->
-      <article class="card">
-        <h3>RISC-V Assembler & Simulator</h3>
-        <p>Translates RISC-V assembly into machine code and simulates execution.</p>
+      <article class="project-card">
+        <h3>RISC-V Assembler &amp; Simulator</h3>
+        <p class="description">Translates RISC-V assembly into machine code and simulates execution.</p>
         <p class="tech">Tech: C · Linux</p>
         <a class="btn" href="https://github.com/Abhinav0821/RISCV_Assembler_Simulator" target="_blank">View on GitHub</a>
       </article>
-
-      <!-- Mini OS Suite -->
-      <article class="card">
+    </div>
+    <div class="projects__row">
+      <article class="project-card single">
         <h3>Mini OS Components Suite</h3>
-        <p>ELF32 loader, shell, scheduler & utilities in C on Linux.</p>
+        <p class="description">ELF32 loader, shell, scheduler &amp; utilities in C on Linux.</p>
         <p class="tech">Tech: C · Linux</p>
         <a class="btn" href="https://github.com/Abhinav0821/Mini_OS_suite" target="_blank">View on GitHub</a>
       </article>
@@ -95,20 +97,22 @@
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section id="certifications" class="card">
-    <h2>Certifications</h2>
-    <ul>
+  <section id="certifications" class="section card">
+    <h2 class="section__title">Certifications</h2>
+    <ul class="cert-list">
       <li>Intro to OOP in C++, University of London – <em>Link coming soon</em></li>
       <li>Intro to Front-End Development, Meta – <em>Link coming soon</em></li>
-      <li>Supervised ML: Regression & Classification, DeepLearning.AI – <em>Link coming soon</em></li>
+      <li>Supervised ML: Regression &amp; Classification, DeepLearning.AI – <em>Link coming soon</em></li>
     </ul>
   </section>
 
-  <!-- FOOTER -->
-  <footer id="contact">
+  <!-- CONTACT -->
+  <footer id="contact" class="section card contact">
+    <h2 class="section__title">Contact</h2>
     <p>© 2025 Abhinav Kashyap. <a href="mailto:abhinav23022@iiitd.ac.in">Say hi!</a></p>
   </footer>
 
+  <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
