@@ -1,3 +1,4 @@
+/* style.css */
 :root {
   --card-bg: rgba(255, 255, 255, 0.15);
   --text-color: #F2F6FA;
@@ -9,7 +10,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Inter', sans-serif;
-  background: url('./assets/background.png') center/cover no-repeat fixed;
+  background: url('../assets/background.png') center/cover no-repeat fixed;
   color: var(--text-color);
 }
 
