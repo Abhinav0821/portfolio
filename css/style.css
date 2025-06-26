@@ -19,7 +19,7 @@ body {
   color: var(--text-color);
 }
 
-/* Topbar – now solid */
+/* Topbar – solid white */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -49,25 +49,31 @@ body {
   padding: 4rem 1rem;
 }
 .avatar {
-  width: 160px; height: 160px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 4px solid var(--accent);
-  object-fit: cover; margin-bottom: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 .subtitle {
-  font-weight: 300; margin-bottom: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
   color: var(--subtext-color);
 }
 .social-links a {
-  margin: 0 0.5rem; font-size: 1.4rem;
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
   color: var(--accent);
 }
 
-/* Sections */
+/* Sections – 30% opaque white */
 .section {
+  background: rgba(255, 255, 255, 0.3);
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: auto;
+  border-radius: 8px;
 }
 .section__title {
   font-size: 2.25rem;
@@ -76,9 +82,9 @@ body {
   color: var(--accent);
 }
 
-/* Unified white cards */
+/* Cards – 30% opaque white */
 .card, .project-card {
-  background: var(--bg-color);
+  background: rgba(255, 255, 255, 0.3);
   color: var(--text-color);
   border-radius: var(--card-radius);
   padding: var(--card-padding);
@@ -96,7 +102,8 @@ body {
 .projects__row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem; margin-bottom: 2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 .project-card {
   display: flex;
@@ -142,26 +149,33 @@ body {
 /* Video Modal */
 .modal {
   display: none;
-  position: fixed; top: 0; left: 0;
-  width: 100%; height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  justify-content: center; align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 50;
 }
 .modal-content {
   position: relative;
-  width: 90%; max-width: 800px;
+  width: 90%;
+  max-width: 800px;
   background: #000;
   border-radius: 8px;
   overflow: hidden;
 }
 .modal-content iframe {
-  width: 100%; height: 450px;
+  width: 100%;
+  height: 450px;
   border: none;
 }
 .close-btn {
   position: absolute;
-  top: 8px; right: 12px;
+  top: 8px;
+  right: 12px;
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
